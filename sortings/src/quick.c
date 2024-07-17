@@ -98,11 +98,21 @@ int main() {
             i++;
         }
 
-        start = clock();
-        quickSort(ar, 0, i - 1);
-        end = clock();
+        cpu_time_used = 0;
 
-        cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+        for (int j = 0; j < 10; j++) {
+            int arCopy[i];
+            for (int k = 0; k < i; k++) arCopy[k] = ar[k];
+
+            start = clock();
+            if (j != 9) quickSort(arCopy, 0, i - 1);
+            else quickSort(ar, 0, i - 1);
+            end = clock();
+            
+            cpu_time_used += ((double) (end - start)) / CLOCKS_PER_SEC;
+        }
+
+        cpu_time_used /= 10;
         fprintf(outputFile, "Quick Sort:\n");
         fprintf(outputFile, "Tempo de CPU usado: %f segundos\n", cpu_time_used);
         for (int j = 0; j < i; j++) {
