@@ -40,7 +40,7 @@ int main() {
         return EXIT_FAILURE;
     }
 
-    outputFile = fopen("/home/campfor/Área de Trabalho/Estrutura de Dados I/sortings/resultados-num/insertion/num.100000.1.in", "w");
+    outputFile = fopen("/home/campfor/Área de Trabalho/Estrutura de Dados I/sortings/resultados-num/insertion/num.100000.1.out", "w");
     if (outputFile == NULL) {
         perror("Erro ao abrir o arquivo de saída");
         fclose(inputFile);
