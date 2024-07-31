@@ -34,6 +34,7 @@ class Simples {
         int front() const;
         int back() const;
         int get(size_t pos) const;
+        void print() const;
 
         // modifiers
         // pos = {1, 2, 3, ...}

@@ -92,7 +92,7 @@ int Simples::get(size_t pos) const {
     }
 
     if (pos < 1 || pos > list_size) {
-        fprintf(stderr, "pos - 1icao invalida:\n");
+        fprintf(stderr, "Posicao invalida:\n");
         exit(EXIT_FAILURE);
     }
 
@@ -102,6 +102,13 @@ int Simples::get(size_t pos) const {
     }
 
     return it->data;
+}
+
+void Simples::print() const {
+    No *it;
+    for (it = begin(); it != end(); it->next) {
+        printf("%d%c", it->data, (it->next == nullptr ? '\n' : ' '));
+    }
 }
 
 // modifiers
