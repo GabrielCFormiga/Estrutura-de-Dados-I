@@ -33,6 +33,7 @@ class Simples {
         // element acess
         int front() const;
         int back() const;
+        int get(size_t pos) const;
 
         // modifiers
         // pos = {1, 2, 3, ...}

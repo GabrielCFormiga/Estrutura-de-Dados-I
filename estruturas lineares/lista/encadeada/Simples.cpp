@@ -85,6 +85,25 @@ int Simples::back() const {
     return tail->data;
 }
 
+int Simples::get(size_t pos) const {
+    if (empty()) {
+        fprintf(stderr, "Lista vazia:\n");
+        exit(EXIT_FAILURE);
+    }
+
+    if (pos < 1 || pos > list_size) {
+        fprintf(stderr, "pos - 1icao invalida:\n");
+        exit(EXIT_FAILURE);
+    }
+
+    No *it = head;
+    for (size_t i = 1; i < pos; i++) {
+        it = it->next;
+    }
+
+    return it->data;
+}
+
 // modifiers
 void Simples::push_back(int value) {
     No *aux = new No(value);
