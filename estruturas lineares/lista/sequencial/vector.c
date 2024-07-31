@@ -22,6 +22,11 @@ void vec_free(Vector *vec) {
 }
 
 void vec_print(Vector *vec) {
+    if (empty(vec)) {
+        printf("Vetor vazio\n");
+        return;
+    }
+
     for (int i = 0; i < vec->size; i++) {
         printf("%d%c", vec->data[i], (i == vec->size - 1 ? '\n' : ' '));
     }
@@ -29,20 +34,15 @@ void vec_print(Vector *vec) {
 
 // capacity
 void resize(Vector *vec, size_t n) {
-    int *tmp = (int *) calloc(n, sizeof(int));
+    int *tmp = (int *) realloc(vec->data, n * sizeof(int));
 
     if (tmp == NULL) {
         fprintf(stderr, "Erro ao alocar memória:\n");
         exit(EXIT_FAILURE);
     }
 
-    for (int i = 0; i < vec->size; i++) {
-        tmp[i] = vec->data[i];
-    }
-
-    vec->capacity = n;
-    free(vec->data);
     vec->data = tmp;
+    vec->capacity = n;
 };
 
 int empty(Vector *vec) {
@@ -100,7 +100,7 @@ void insert(Vector *vec, int index, int value) {
         exit(EXIT_FAILURE);
     }
     
-    if (size == capacity) resize(vec, 2 * vec->capacity);
+    if (vec->size == vec->capacity) resize(vec, 2 * vec->capacity);
 
     for (int i = vec->size; i > index; i--) {
         vec->data[i] = vec->data[i - 1];
