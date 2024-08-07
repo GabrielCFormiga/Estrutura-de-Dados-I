@@ -30,3 +30,7 @@ Aqui estão as implementações específicas:
 
 - Lista
   - [Sequencial - Vector](https://github.com/GabrielCFormiga/Estrutura-de-Dados-I/tree/main/estruturas%20lineares/lista/sequencial)
+  - [Encadeada - List](https://github.com/GabrielCFormiga/Estrutura-de-Dados-I/tree/main/estruturas%20lineares/lista/encadeada)
+
+- Pilha
+  - [Sequencial - Stack](https://github.com/GabrielCFormiga/Estrutura-de-Dados-I/tree/main/estruturas%20lineares/pilha/sequencial)
