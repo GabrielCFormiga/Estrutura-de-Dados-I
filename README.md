@@ -34,3 +34,7 @@ Aqui estão as implementações específicas:
 
 - Pilha
   - [Sequencial - Stack](https://github.com/GabrielCFormiga/Estrutura-de-Dados-I/tree/main/estruturas%20lineares/pilha/sequencial)
+
+### Grafos
+  - [BFS](https://github.com/GabrielCFormiga/Estrutura-de-Dados-I/blob/main/grafos/bfs.cpp)
+  - [DFS](https://github.com/GabrielCFormiga/Estrutura-de-Dados-I/blob/main/grafos/dfs.cpp)
