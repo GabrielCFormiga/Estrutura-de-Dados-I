@@ -14,16 +14,18 @@ Os códigos estão implementados em C/C++.
 
 Para uma visão geral dos algoritmos de ordenação abordados, consulte o documento PDF abaixo:
 
-- 📄 **[Comparação de Algoritmos de Ordenação Clássicos (Bubble, Selection, Insertion e Quick)](https://github.com/GabrielCFormiga/Estrutura-de-Dados-I/blob/main/sortings/Compara%C3%A7%C3%A3o_de_Algoritmos_de_Ordena%C3%A7%C3%A3o_Cl%C3%A1ssicos__Bubble__Selection__Insertion_e_Quick.pdf)**
+- 📄 **[Comparação de Algoritmos de Ordenação Clássicos (Bubble, Selection, Insertion, Quick e Merge)](https://github.com/GabrielCFormiga/Estrutura-de-Dados-I/blob/main/sortings/Compara%C3%A7%C3%A3o_de_Algoritmos_de_Ordena%C3%A7%C3%A3o_Cl%C3%A1ssicos__Bubble__Selection__Insertion__Quick_e_Merge.pdf)**
 
 Aqui estão as implementações específicas:
 
 - [Bubble Sort](https://github.com/GabrielCFormiga/Estrutura-de-Dados-I/blob/main/sortings/src/bubble.c)
 - [Counting Sort](https://github.com/GabrielCFormiga/Estrutura-de-Dados-I/blob/main/sortings/src/counting.c)
 - [Insertion Sort](https://github.com/GabrielCFormiga/Estrutura-de-Dados-I/blob/main/sortings/src/insertion.c)
+- [Merge Sort](https://github.com/GabrielCFormiga/Estrutura-de-Dados-I/blob/main/sortings/src/merge.c)
 - Quick Sort
   - [Quick Sort - Pivô é o último elemento](https://github.com/GabrielCFormiga/Estrutura-de-Dados-I/blob/main/sortings/src/quick.c)
   - [Quick Sort - Pivô é a mediana de três elementos](https://github.com/GabrielCFormiga/Estrutura-de-Dados-I/blob/main/sortings/src/quickMedianaDeTres.c)
+  - [Quick Sort - Três Partições](https://github.com/GabrielCFormiga/Estrutura-de-Dados-I/blob/main/sortings/src/quickTresVias.c)
 - [Selection Sort](https://github.com/GabrielCFormiga/Estrutura-de-Dados-I/blob/main/sortings/src/selection.c)
 
 ### Estruturas Lineares
